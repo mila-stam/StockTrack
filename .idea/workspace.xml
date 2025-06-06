@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7eb2479-f1bf-4795-8a23-0c2d45f511fb" name="Changes" comment="" />
+    <list default="true" id="f7eb2479-f1bf-4795-8a23-0c2d45f511fb" name="Changes" comment="add repository and service" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,7 +13,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="develop/add-models" />
+        <entry key="$PROJECT_DIR$" value="develop/backend" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,9 +54,9 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.StockTrackAppApplication.executor": "Run",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "develop/backend",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/milas/StockTrack",
+    "last_opened_file_path": "D:/Documents/FINKI/Projects/V semestar/StockTrackApp/backend",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -122,5 +122,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add repository and service" />
+    <option name="LAST_COMMIT_MESSAGE" value="add repository and service" />
   </component>
 </project>

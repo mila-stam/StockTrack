@@ -1,0 +1,92 @@
+.App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.chart-container {
+  border: 1px solid #e0e0e0;
+  padding: 15px;
+  margin: 20px auto;
+  max-width: 1000px; /* Прилагодете ја максималната ширина за да одговара на SVG */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* D3.js специфични стилови */
+.x-axis path, .y-axis path {
+  stroke: #ccc;
+}
+
+.x-axis line, .y-axis line {
+  stroke: #eee;
+}
+
+.x-axis text, .y-axis text {
+  font-size: 12px;
+  fill: #666;
+}
+
+.line-path {
+  stroke: #007bff; /* Боја на линијата */
+  stroke-width: 2px;
+}
+
+.focus circle {
+  fill: #007bff;
+  stroke: #fff;
+  stroke-width: 1.5px;
+}
+
+/* Tooltip стилови */
+.stock-tooltip p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+.stock-tooltip strong {
+  color: #a8dadc;
+}

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7eb2479-f1bf-4795-8a23-0c2d45f511fb" name="Changes" comment="add repository and service" />
+    <list default="true" id="f7eb2479-f1bf-4795-8a23-0c2d45f511fb" name="Changes" comment="add frontend" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,12 +24,12 @@
     &quot;assignee&quot;: &quot;mila-stam&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/mila-stam/StockTrack.git&quot;,
-    &quot;accountId&quot;: &quot;ae11cad8-4fa5-4768-b302-995ccf6044e1&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/mila-stam/StockTrack",
+    "accountId": "235f418e-ab51-429d-91f0-6ad6aaa89e4d"
   }
-}</component>
+}]]></component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -56,7 +56,7 @@
     "Spring Boot.StockTrackAppApplication.executor": "Run",
     "git-widget-placeholder": "develop/backend",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Documents/FINKI/Projects/V semestar/StockTrackApp/backend",
+    "last_opened_file_path": "D:/Documents/FINKI/Projects/V semestar/StockTrackApp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,8 +91,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.26775.15" />
-        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.26775.15" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
       </set>
     </attachedChunks>
   </component>
@@ -106,7 +106,17 @@
       <updated>1749032094942</updated>
       <workItem from="1749032096275" duration="2094000" />
       <workItem from="1749038864377" duration="42000" />
+      <workItem from="1749202293271" duration="369000" />
     </task>
+    <task id="LOCAL-00001" summary="add frontend">
+      <option name="closed" value="true" />
+      <created>1749202537137</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1749202537137</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -125,6 +135,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add repository and service" />
-    <option name="LAST_COMMIT_MESSAGE" value="add repository and service" />
+    <MESSAGE value="add frontend" />
+    <option name="LAST_COMMIT_MESSAGE" value="add frontend" />
   </component>
 </project>

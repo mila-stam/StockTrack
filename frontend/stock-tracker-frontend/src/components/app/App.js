@@ -23,20 +23,19 @@ function App() {
     setError('');
     setStockData([]);
 
+
     try {
-      const response = await axios.get(`${API_BASE_URL}/daily/${symbol.toUpperCase()}`);
+      const response = await axios.get(`${API_BASE_URL}/daily/${symbol}`);
       if (response.data && response.data.length > 0) {
         setStockData(response.data);
       } else {
-        setError(`Нема пронајдени податоци за симболот: ${symbol}. Проверете го симболот или API лимитот.`);
+        setError("Не се пронајдени податоци за симболот.");
+        setStockData([]);
       }
     } catch (err) {
-      console.error('Error fetching stock data:', err);
-      if (err.response && err.response.status === 404) {
-        setError(`Нема пронајдени податоци за симболот: ${symbol}.`);
-      } else {
-        setError(`Грешка при повлекување податоци: ${err.message}. Проверете ја конзолата.`);
-      }
+      console.error("Грешка при преземање на податоците:", err);
+      setError("Настана грешка при поврзување со серверот.");
+      setStockData([]);
     } finally {
       setLoading(false);
     }

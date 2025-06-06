@@ -25,19 +25,14 @@ public class StockDailyData {
     @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate date;
 
-    @JsonProperty("1. open")
     private double open;
 
-    @JsonProperty("2. high")
     private double high;
 
-    @JsonProperty("3. low")
     private double low;
 
-    @JsonProperty("4. close")
     private double close;
 
-    @JsonProperty("5. volume")
     private long volume;
 
     public StockDailyData(String symbol,LocalDate date, double open, double high, double low, double close, long volume) {

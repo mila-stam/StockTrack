@@ -17,13 +17,14 @@ const StockChart = ({ data, symbol }) => {
         const parseDate = d3.timeParse("%Y-%m-%d");
         const parsedData = data.map(d => ({
             date: parseDate(d.date),
-
-            open: isNaN(+d.open) ? undefined : +d.open,
-            high: isNaN(+d.high) ? undefined : +d.high,
-            low: isNaN(+d.low) ? undefined : +d.low,
-            close: isNaN(+d.close) ? undefined : +d.close,
-            volume: isNaN(+d.volume) ? undefined : +d.volume
+            open: +d.open,
+            high: +d.high,
+            low: +d.low,
+            close: +d.close,
+            volume: +d.volume
         })).filter(d => d.date && d.close !== undefined);
+
+        console.log("Parsed data for D3:", parsedData); // <--- Add this
 
         if (parsedData.length === 0) {
             d3.select(svgRef.current).selectAll("*").remove();

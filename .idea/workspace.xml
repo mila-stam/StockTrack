@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7eb2479-f1bf-4795-8a23-0c2d45f511fb" name="Changes" comment="add frontend" />
+    <list default="true" id="f7eb2479-f1bf-4795-8a23-0c2d45f511fb" name="Changes" comment="add frontend">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -24,12 +26,12 @@
     &quot;assignee&quot;: &quot;mila-stam&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/mila-stam/StockTrack",
-    "accountId": "235f418e-ab51-429d-91f0-6ad6aaa89e4d"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/mila-stam/StockTrack&quot;,
+    &quot;accountId&quot;: &quot;235f418e-ab51-429d-91f0-6ad6aaa89e4d&quot;
   }
-}]]></component>
+}</component>
   <component name="KubernetesApiPersistence">{}</component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -50,22 +52,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "Spring Boot.StockTrackAppApplication.executor": "Run",
-    "git-widget-placeholder": "develop/backend",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Documents/FINKI/Projects/V semestar/StockTrackApp",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propCompiler",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.StockTrackAppApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Documents/FINKI/Projects/V semestar/StockTrackApp/backend&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration default="true" type="JetRunConfigurationType">
       <module name="StockTrack" />
@@ -107,6 +109,8 @@
       <workItem from="1749032096275" duration="2094000" />
       <workItem from="1749038864377" duration="42000" />
       <workItem from="1749202293271" duration="369000" />
+      <workItem from="1749461339027" duration="783000" />
+      <workItem from="1749462217423" duration="82000" />
     </task>
     <task id="LOCAL-00001" summary="add frontend">
       <option name="closed" value="true" />

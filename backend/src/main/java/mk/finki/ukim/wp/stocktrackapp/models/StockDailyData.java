@@ -11,8 +11,8 @@ import jakarta.persistence.*;
 import java.time.LocalDate;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
+//@NoArgsConstructor
+//@AllArgsConstructor
 @Entity
 @Table(name = "stock_daily_data")
 @IdClass(StockDailyDataId.class)

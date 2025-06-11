@@ -14,7 +14,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/stock")
-//@CrossOrigin(origins = "http://localhost:8080")
 
 @CrossOrigin(origins = "http://localhost:3000")
 public class StockDataController {

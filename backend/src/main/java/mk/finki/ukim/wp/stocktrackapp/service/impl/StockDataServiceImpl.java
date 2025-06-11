@@ -21,7 +21,7 @@ import java.util.List;
 @Service
 public class StockDataServiceImpl implements StockDataService {
 
-    @Value("${alphavantage.api.key}")
+    @Value("alphavantage.stock.api.key")
     private String apiKey;
 
     private final RestTemplate restTemplate;

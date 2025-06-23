@@ -1,0 +1,317 @@
+.stockChartSvg {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.xAxis line,
+.xAxis path,
+.yAxis line,
+.yAxis path,
+.volumeYAxis line,
+.volumeYAxis path {
+    stroke: #e2e8f0;
+    shape-rendering: crispEdges;
+}
+
+.xAxis text,
+.yAxis text,
+.volumeYAxis text {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    fill: #718096;
+}
+
+.candlestickWick {
+    stroke: #718096;
+    stroke-width: 1.5px;
+    stroke-linecap: round;
+}
+
+.candlestickBodyUp {
+    fill: #00b06b;
+    stroke: #00b06b;
+    stroke-width: 0.8px;
+}
+
+.candlestickBodyDown {
+    fill: #ff3a3a;
+    stroke: #ff3a3a;
+    stroke-width: 0.8px;
+}
+
+.volumeBar {
+    opacity: 0.6;
+}
+
+.hoverLine {
+    stroke: #94a3b8;
+    stroke-width: 1px;
+    stroke-dasharray: 3,3;
+}
+
+.priceFocusCircle {
+    fill: #3182ce;
+    stroke: white;
+    stroke-width: 2px;
+}
+
+.stockTooltip {
+    position: absolute;
+    background-color: rgba(45, 55, 72, 0.95);
+    color: white;
+    padding: 12px 15px;
+    border-radius: 8px;
+    pointer-events: none;
+    z-index: 1001;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.85rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+    line-height: 1.4;
+    min-width: 160px;
+    transition: opacity 0.1s ease-in-out;
+}
+
+.stockTooltip p {
+    margin: 0;
+    padding: 0;
+}
+
+.stockTooltip strong {
+    color: #a0aec0;
+    margin-right: 5px;
+}
+
+.chartTitle {
+    font-size: 18px;
+    font-weight: bold;
+    fill: #333;
+}
+
+.infoMessage {
+    text-align: center;
+    color: #718096;
+    font-size: 1rem;
+    margin-top: 20px;
+}
+
+.grid line {
+    stroke: #e2e8f0;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+    stroke-width: 0;
+}
+
+.verticalGrid line {
+}
+
+.chartAndInfoContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 1300px;
+    align-items: flex-start;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.chartWrapper {
+    flex-grow: 3;
+    flex-shrink: 1;
+    flex-basis: 0;
+    width: 100%;
+    min-width: 550px;
+    max-width: 950px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dataDisplaySquare {
+    flex-grow: 1;
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 300px;
+    min-height: 250px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 25px;
+    padding-top: 60px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    color: #4a5568;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dataDisplaySquare p {
+    margin: 5px 0;
+}
+
+.dataDisplaySquare strong {
+    color: #2d3748;
+    margin-right: 5px;
+}
+
+.dataDisplayTitle {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #3182ce;
+    margin-bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.initialMessage {
+    text-align: center;
+    color: #718096;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin: auto;
+}
+
+@media (min-width: 1024px) {
+    .chartAndInfoContainer {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .chartWrapper {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .dataDisplaySquare {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .chartAndInfoContainer {
+        gap: 15px;
+        padding: 0 10px;
+    }
+    .chartWrapper {
+        padding: 15px;
+    }
+    .dataDisplaySquare {
+        padding: 20px;
+        padding-top: 60px;
+        min-height: 180px;
+    }
+    .dataDisplayTitle {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    .dataDisplaySquare p {
+        font-size: 0.9rem;
+    }
+    .zoomControls {
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        position: static;
+        margin-top: 0;
+        top: auto;
+        right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .chartAndInfoContainer {
+        gap: 10px;
+    }
+    .chartWrapper {
+        padding: 10px;
+    }
+    .dataDisplaySquare {
+        padding: 15px;
+        padding-top: 60px;
+        min-height: 150px;
+        max-width: 100%;
+    }
+    .dataDisplayTitle {
+        font-size: 1.1rem;
+    }
+    .dataDisplaySquare p {
+        font-size: 0.85rem;
+    }
+}
+
+.zoomControls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: auto;
+    z-index: 10;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+}
+
+.zoomLabel {
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    color: #4a5568;
+    font-weight: 500;
+}
+
+.zoomSlider {
+    -webkit-appearance: none;
+    width: 120px;
+    height: 8px;
+    background: #e0e0e0;
+    border-radius: 5px;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+.zoomSlider:hover {
+    opacity: 1;
+}
+
+.zoomSlider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #3182ce;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    margin-top: -6px;
+}
+
+.zoomSlider::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #3182ce;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}

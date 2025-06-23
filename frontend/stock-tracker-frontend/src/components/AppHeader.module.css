@@ -1,0 +1,131 @@
+.headerContainer {
+    width: 100%;
+    background-color: #2d3748;
+    color: white;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.headerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.appName {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.appName:hover {
+    color: #a0aec0;
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.navItem {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.navItem:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #edf2f7;
+}
+
+.logoutButton {
+    background-color: #e53e3e;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logoutButton:hover {
+    background-color: #c53030;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.logoutButton:active {
+    background-color: #9b2c2c;
+    transform: translateY(0);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .headerContainer {
+        padding: 15px 25px;
+    }
+    .appName {
+        font-size: 1.5rem;
+    }
+    .navLinks {
+        gap: 15px;
+    }
+    .navItem {
+        font-size: 0.9rem;
+        padding: 4px 8px;
+    }
+    .logoutButton {
+        padding: 6px 12px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .headerContainer {
+        padding: 10px 15px;
+        flex-direction: column;
+    }
+    .headerContent {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .appName {
+        font-size: 1.3rem;
+    }
+    .navLinks {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .navItem {
+        font-size: 0.85rem;
+        padding: 3px 6px;
+    }
+    .logoutButton {
+        padding: 5px 10px;
+        font-size: 0.85rem;
+    }
+}

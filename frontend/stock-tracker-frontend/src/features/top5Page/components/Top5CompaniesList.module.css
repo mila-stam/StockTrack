@@ -1,0 +1,123 @@
+.companiesSection {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-bottom: 50px;
+    text-align: left;
+}
+
+.sectionTitle {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.companyList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.companyItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #edf2f7;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    border-radius: 8px;
+    margin: 5px 0;
+}
+
+.companyItem:last-child {
+    border-bottom: none;
+}
+
+.companyItem:hover {
+    background-color: #f0f2f5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.companyItem:active {
+    background-color: #e2e8f0;
+    transform: translateY(0);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.companyInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.companyName {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin-bottom: 3px;
+}
+
+.companyTicker {
+    font-size: 0.9rem;
+    color: #718096;
+    font-weight: 500;
+}
+
+.companyMarketCap {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #2f855a;
+}
+
+@media (max-width: 768px) {
+    .companiesSection {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+    .sectionTitle {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    .companyName {
+        font-size: 1rem;
+    }
+    .companyTicker {
+        font-size: 0.85rem;
+    }
+    .companyMarketCap {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .companiesSection {
+        padding: 15px;
+        margin-bottom: 30px;
+    }
+    .sectionTitle {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    .companyItem {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 0;
+    }
+    .companyName {
+        font-size: 0.95rem;
+    }
+    .companyTicker {
+        font-size: 0.8rem;
+        margin-bottom: 5px;
+    }
+    .companyMarketCap {
+        align-self: flex-end;
+        font-size: 0.95rem;
+    }
+}

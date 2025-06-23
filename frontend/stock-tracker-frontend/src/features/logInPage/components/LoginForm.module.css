@@ -1,0 +1,126 @@
+.formContainer {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px;
+    text-align: center;
+}
+
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.formGroup {
+    text-align: left;
+}
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #4a5568;
+    font-size: 0.95rem;
+}
+
+.inputField {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+.inputField::placeholder {
+    color: #a0aec0;
+}
+
+.inputField:focus {
+    border-color: #63b3ed;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.2);
+}
+
+.submitButton {
+    background-color: #3182ce;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submitButton:hover {
+    background-color: #2b6cb0;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.submitButton:active {
+    background-color: #2c5282;
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message {
+    font-size: 0.9rem;
+    margin-top: -10px;
+    padding: 8px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.errorMessage {
+    color: #c53030;
+    background-color: #ffebeb;
+    border: 1px solid #c53030;
+}
+
+.successMessage {
+    color: #2f855a;
+    background-color: #ebffed;
+    border: 1px solid #2f855a;
+}
+
+.signupPrompt {
+    font-size: 0.9rem;
+    color: #718096;
+    margin-top: 20px;
+}
+
+.signupLink {
+    color: #2f855a;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signupLink:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .formContainer {
+        padding: 25px;
+        margin: 10px;
+    }
+    .label {
+        font-size: 0.9rem;
+    }
+    .inputField {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    .submitButton {
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+}

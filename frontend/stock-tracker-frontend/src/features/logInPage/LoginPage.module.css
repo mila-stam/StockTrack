@@ -1,0 +1,80 @@
+.loginPageContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+}
+
+.pageTitle {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.toggleButtons {
+    display: flex;
+    margin-bottom: 30px;
+    background-color: #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.toggleButton {
+    flex: 1;
+    padding: 12px 25px;
+    border: none;
+    background-color: transparent;
+    color: #4a5568;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.toggleButton.active {
+    background-color: rgba(83, 49, 206, 0.75);
+    color: white;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.toggleButton:not(.active):hover {
+    background-color: #cbd5e0;
+}
+
+@media (max-width: 768px) {
+    .pageTitle {
+        font-size: 2rem;
+    }
+    .toggleButton {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pageTitle {
+        font-size: 1.8rem;
+    }
+    .toggleButtons {
+        flex-direction: column;
+        width: 100%;
+        max-width: 250px;
+    }
+    .toggleButton {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+        border-bottom: 1px solid #cbd5e0;
+    }
+    .toggleButton:last-child {
+        border-bottom: none;
+    }
+}

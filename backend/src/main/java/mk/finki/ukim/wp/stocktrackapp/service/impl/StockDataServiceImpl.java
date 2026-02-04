@@ -21,7 +21,7 @@ import java.util.List;
 @Service
 public class StockDataServiceImpl implements StockDataService {
 
-    @Value("alphavantage.stock.api.key")
+    @Value("${alphavantage.stock.api.key}")
     private String apiKey;
 
     private final RestTemplate restTemplate;
@@ -46,7 +46,7 @@ public class StockDataServiceImpl implements StockDataService {
         }
 
 
-        String url = String.format("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=%s&outputsize=full&apikey=%s", symbol, apiKey);
+        String url = String.format("https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol=%s&outputsize=compact&apikey=%s", symbol, apiKey);
         String jsonResponse = restTemplate.getForObject(url, String.class);
 
         List<StockDailyData> dailyDataList = new ArrayList<>();

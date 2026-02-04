@@ -1,0 +1,22 @@
+.panel {
+    width: 280px;
+    padding: 16px;
+    background: #f8fafc;
+    border-left: 1px solid #e2e8f0;
+}
+
+.title {
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.placeholder {
+    color: #64748b;
+    font-size: 0.9rem;
+}

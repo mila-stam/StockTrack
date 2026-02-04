@@ -56,6 +56,18 @@
     max-width: 600px;
     width: 100%;
 }
+.chartWithPanel {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+    width: 100%;
+}
+
+.chartArea {
+    flex: 1;          
+    min-width: 0;     
+}
+
 
 .errorMessage {
     color: #e53e3e;

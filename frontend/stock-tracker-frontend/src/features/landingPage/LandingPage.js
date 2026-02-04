@@ -1,3 +1,4 @@
+// src/features/landingPage/LandingPage.js
 import React from 'react';
 import styles from './LandingPage.module.css';
 import { useNavigate } from 'react-router-dom';
@@ -5,18 +6,12 @@ import StockNewsSection from './components/StockNewsSection';
 import AppHeader from '../../components/AppHeader';
 import AppFooter from '../../components/AppFooter';
 
-
 function LandingPage() {
     const navigate = useNavigate();
 
-    const handleGetStartedClick = () => {
-        console.log('Get Started button clicked!');
-        navigate('/login');
-    };
-
     return (
         <div className={styles.landingPageContainer}>
-            <AppHeader isLoggedIn={false} />
+            <AppHeader />
 
             <main className={styles.mainContent}>
                 <h1 className={styles.pageTitle}>StockTrack</h1>
@@ -24,12 +19,12 @@ function LandingPage() {
 
                 <button
                     className={styles.getStartedButton}
-                    onClick={handleGetStartedClick}
+                    onClick={() => navigate('/top5')}
                 >
                     Get Started
                 </button>
 
-                <StockNewsSection />
+                <StockNewsSection limit={5} />
             </main>
 
             <AppFooter />

@@ -6,7 +6,7 @@ import styles from './PredictionPage.module.css';
 function PredictionPage({ isLoggedIn, onLogout }) {
     return (
         <div className={styles.predictionPageContainer}>
-            <AppHeader isLoggedIn={isLoggedIn} onLogout={onLogout} />
+            {/* <AppHeader isLoggedIn={isLoggedIn} onLogout={onLogout} /> */}
 
             <main className={styles.mainContent}>
                 <div className={styles.messageBox}>

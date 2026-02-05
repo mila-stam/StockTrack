@@ -24,7 +24,7 @@ jobs:
       - name: Build & push frontend
         uses: docker/build-push-action@v6
         with:
-          context: StockTrack/frontend
+          context: frontend
           file: StockTrack/frontend/Dockerfile
           push: true
           tags: |
@@ -34,7 +34,7 @@ jobs:
       - name: Build & push backend
         uses: docker/build-push-action@v6
         with:
-          context: StockTrack/backend
+          context: backend
           file: StockTrack/backend/Dockerfile
           push: true
           tags: |

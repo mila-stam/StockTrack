@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: stocktrack-ingress
+  namespace: stocktrack
+spec:
+  ingressClassName: nginx
+  rules:
+    - host: stocktrack.local
+      http:
+        paths:
+          - path: /api
+            pathType: Prefix
+            backend:
+              service:
+                name: stocktrack-backend-svc
+                port:
+                  number: 8082
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: stocktrack-frontend-svc
+                port:
+                  number: 3000

@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stocktrack-backend
+  namespace: stocktrack
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stocktrack-backend
+  template:
+    metadata:
+      labels:
+        app: stocktrack-backend
+    spec:
+      containers:
+        - name: backend
+          image: 223057/stocktrack-backend:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 8082
+          envFrom:
+            - configMapRef:
+                name: backend-config
+            - secretRef:
+                name: backend-secret
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: stocktrack-backend-svc
+  namespace: stocktrack
+spec:
+  selector:
+    app: stocktrack-backend
+  ports:
+    - port: 8082
+      targetPort: 8082
+  type: ClusterIP

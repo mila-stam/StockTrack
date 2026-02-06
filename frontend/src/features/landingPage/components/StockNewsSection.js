@@ -13,7 +13,7 @@ function StockNewsSection({ limit }) {
 
         const fetchNews = async () => {
             try {
-                const response = await fetch('http://localhost:8082/api/news/latest');
+                const response = await fetch('/api/news/latest');
 
                 if (!response.ok) {
                     throw new Error(`HTTP error! status: ${response.status}`);

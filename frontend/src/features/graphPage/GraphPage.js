@@ -27,7 +27,7 @@ function GraphPage() {
         setStockData([]);
 
         try {
-            const response = await fetch(`http://localhost:8082/api/stock/daily/${symbol}`);
+            const response = await fetch(`/api/stock/daily/${symbol}`);
 
             if (!response.ok) {
                 if (response.status === 404) {
